@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Privacy Policy | Kripik Tempe Sanan</title>
+<title>Hubungi Kami | Kripik Tempe Sanan</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Kripik Tempe Sanan, Kripik Tempe Malang, Kripik Tempe Sanan Malang" />
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
@@ -34,12 +35,12 @@
 </head>
 	
 <body>
-	<?php include 'header.php' ?>
+<?php include 'header.php' ?>
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="<?php echo base_url()?>index.php/home">Home</a><span>|</span></li>
-				<li>Ketentuan & Privasi</li>
+				<li>Hubungi Kami</li>
 			</ul>
 		</div>
 	</div>
@@ -47,73 +48,53 @@
 	<div class="banner">
 		<?php include 'leftmenu.php' ?>
 		<div class="w3l_banner_nav_right">
-<!-- privacy -->
-		<div class="privacy">
-			<div class="privacy1">
-				<h3>Privacy Policy</h3>
-				<div class="banner-bottom-grid1 privacy1-grid">
+<!-- mail -->
+		<div class="mail">
+			<h3>Mail Us</h3>
+			<div class="agileinfo_mail_grids">
+				<div class="col-md-4 agileinfo_mail_grid_left">
 					<ul>
-						<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
-						<li>Profile <span>Excepteur sint occaecat cupidatat non proident, sunt in
-							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+						<li><i class="fa fa-home" aria-hidden="true"></i></li>
+						<li>address<span>868 1st Avenue NYC.</span></li>
 					</ul>
 					<ul>
-						<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
-						<li>Search <span>Excepteur sint occaecat cupidatat non proident, sunt in
-							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+						<li>email<span><a href="mailto:info@example.com">info@example.com</a></span></li>
 					</ul>
 					<ul>
-						<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
-						<li>News Feed <span>Excepteur sint occaecat cupidatat non proident, sunt in
-							culpa qui officia deserunt mollit anim id est laborum.</span></li>
-					</ul>
-					<ul>
-						<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
-						<li>Applications <span>Excepteur sint occaecat cupidatat non proident, sunt in
-							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i></li>
+						<li>call to us<span>(+123) 233 2362 826</span></li>
 					</ul>
 				</div>
-			</div>
-			<div class="privacy1">
-				<h3>Terms of Use</h3>
-				<div class="banner-bottom-grid1 privacy2-grid">
-					<div class="privacy2-grid1">
-						<h4>deserunt mollit anim id est laborum?</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-						<div class="privacy2-grid1-sub">
-							<h5>1. sint occaecat cupidatat non proident, sunt</h5>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in
-								culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-8 agileinfo_mail_grid_right">
+					<form action="#" method="post">
+						<div class="col-md-6 wthree_contact_left_grid">
+							<input type="text" name="Name" value="Name*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name*';}" required="">
+							<input type="email" name="Email" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required="">
 						</div>
-						<div class="privacy2-grid1-sub">
-							<h5>2.perspiciatis unde omnis iste natus error</h5>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in
-								culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="col-md-6 wthree_contact_left_grid">
+							<input type="text" name="Telephone" value="Telephone*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone*';}" required="">
+							<input type="text" name="Subject" value="Subject*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject*';}" required="">
 						</div>
-						<div class="privacy2-grid1-sub">
-							<h5>3. natus error sit voluptatem accusant</h5>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in
-								culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="privacy2-grid1-sub">
-							<h5>4. occaecat cupidatat non proident, sunt in</h5>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in
-								culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="privacy2-grid1-sub">
-							<h5>5. deserunt mollit anim id est laborum</h5>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in
-								culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</div>
+						<div class="clearfix"> </div>
+						<textarea  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">
+					</form>
 				</div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
-<!-- //privacy -->
+<!-- //mail -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
+<!-- map -->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96748.15352429623!2d-74.25419879353115!3d40.731667701988506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sshopping+mall+in+New+York%2C+NY%2C+United+States!5e0!3m2!1sen!2sin!4v1467205237951" style="border:0"></iframe>
+	</div>
+<!-- //map -->
 <?php include 'footer.php' ?>
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
@@ -169,6 +150,6 @@ $(document).ready(function(){
 			}
 		});
 
-	</script>
+	</script>s
 </body>
 </html>

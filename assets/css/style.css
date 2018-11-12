@@ -94,7 +94,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_search{
 	float: left;
-    width: 27%;
+    width: 30%;
     margin:.1em 0 0em 10em;
 }
 .w3l_search input[type="text"]{
@@ -120,7 +120,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .w3l_header_right{
 	float: left;
-    padding-left: 10em;
+    padding-left: 17em;
 }
 .w3l_header_right ul li {
     list-style-type: none;
@@ -154,7 +154,7 @@ ul.dropdown-menu.drp-mnu li a i {
     padding-left: 1em;
 }
 .logo_products{
-	padding:4em 0 1em;
+	padding:1.5em 0 1em;
 }
 .w3ls_logo_products_left{
 	float:left;
@@ -303,7 +303,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	margin-bottom: 5em;
 }
 .w3l_banner_nav_right_banner{
-	background:url(../images/1.jpg) no-repeat 0px 0px;
+	background:url(../images/tempe1.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -311,7 +311,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner1{
-	background:url(../images/2.jpg) no-repeat 0px 0px;
+	background:url(../images/tempe2.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -319,7 +319,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner2{
-	background:url(../images/3.jpg) no-repeat 0px 0px;
+	background:url(../images/tempe3.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -547,7 +547,7 @@ ul.dropdown-menu.drp-mnu li a i {
 /*-- cart --*/
 .product_list_header {
     float: left;
-    margin-left: 7em;
+    margin-left: 11em;
 }
 .snipcart-details {
     text-align: center;
