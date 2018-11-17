@@ -34,6 +34,10 @@
 </head>
 	
 <body>
+	<?php
+	 if($this->session->flashdata('sukses_login')) {
+		$message = $this->session->flashdata('sukses_login');
+		echo '<script type="text/javascript">alert("LOGIN BERHASIL")</script>'; } ?>
 <?php include 'header.php' ?>
 <!-- banner -->
 	<div class="banner">

@@ -1,4 +1,5 @@
 <!-- header -->
+<?php $data = $this->session->userdata('login'); ?>
 	<div class="agileits_header">
 		<div class="product_list_header">  
 			<form action="#" method="post" class="last">
@@ -19,12 +20,17 @@
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><?php echo $data['username']; ?><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
+								<?php if($this->session->userdata('login')) { ?>
+								<li><a href="<?php echo base_url() ?>index.php/settings">Akun</a></li> 
+								<li><a href="<?php echo base_url() ?>index.php/login/logout">Log Out</a></li>
+								<?php }else{ ?>
 								<li><a href="<?php echo base_url() ?>index.php/login">Login</a></li> 
 								<li><a href="<?php echo base_url() ?>index.php/login">Daftar</a></li>
+								<?php } ?>
 							</ul>
 						</div>                  
 					</div>	

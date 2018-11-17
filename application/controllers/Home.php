@@ -13,10 +13,6 @@ class Home extends CI_Controller {
 		$this->load->view('index');
 	}
 
-	public function login()
-	{
-		$this->load->view('login');
-	}
 
 }
 

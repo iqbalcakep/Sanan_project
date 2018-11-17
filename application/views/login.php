@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Login | Kripik Tempe Sanan</title>
+<script type="application/javascript">
+/** After windod Load */
+$(window).bind("load", function() {
+  window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove();
+    });
+}, 4000);
+});
+</script>
+
+
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,28 +63,54 @@
 <!-- login -->
 		<div class="w3_login">
 			<h3>Sign In & Sign Up</h3>
+			
 			<div class="w3_login_module">
 				<div class="module form-module">
 				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
 					<div class="tooltip">Click Me</div>
 				  </div>
 				  <div class="form">
+
+				<?php
+				$pesanl = validation_errors();
+				if($pesanl){ ?>
+			   <div class="alert alert-errors fade in"><?php echo $pesanl; ?></div><?php } 
+			   
+			   if($this->session->flashdata('sukses_daftar')) {
+				$message = $this->session->flashdata('sukses_daftar');?>
+				<div class="<?php echo $message['class'] ?>"><?php echo $message['message']; ?></div><?php } ?>
+
 					<h2>Login to your account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
+					<?php echo form_open('login/cekLogin'); ?>
+					  <input type="text" name="username" placeholder="Username" required=" ">
+					  <input type="password" name="password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
-					</form>
+					  <?php echo form_close(); ?>
 				  </div>
 				  <div class="form">
 					<h2>Create an account</h2>
-					<form action="#" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="email" name="Email" placeholder="Email Address" required=" ">
-					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
+				
+		<?php echo form_open('login/register'); ?>
+		<?php $pesan = validation_errors();
+		if($pesan){
+			echo $pesan;
+			echo '<script type="text/javascript">alert("MAAF ERROR")</script>';
+		}
+		?>
+		
+	
+					<input type="text" name="nama" placeholder="nama" required=" ">   
+					  <input type="text" name="username" placeholder="username" required=" ">     
+					  <select class="form-control selcls" name="jenis_kelamin" id="gender1">
+          			<option value="L">Laki-Laki</option>
+          			<option value="P">Perempuan</option>
+    			    </select>    <br> 
+					  <input type="password" name="password" placeholder="password" required=" ">
+					  <input type="password" name="cpassword" placeholder="confirm password" required=" ">
+					  <input type="email" name="email" placeholder="Email Address" required=" ">
+					  <input type="text" name="nomer_telepon" placeholder="Phone Number" required=" ">
 					  <input type="submit" value="Register">
-					</form>
+					<?php echo form_close(); ?>
 				  </div>
 				  <div class="cta"><a href="#">Forgot your password?</a></div>
 				</div>
