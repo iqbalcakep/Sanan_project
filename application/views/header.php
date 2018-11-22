@@ -20,7 +20,7 @@
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><?php echo $data['username']; ?><span class="caret"></span></a>
+					<a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><?php echo $data['username']; ?><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
@@ -58,7 +58,7 @@
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href=""><span>Sanan</span> Tempe</a></h1>
+				<h1><a href="<?php echo base_url() ?>index.php/home"><span>Sanan</span> Tempe</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
@@ -69,8 +69,8 @@
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:sanan@gmail.com">sanan@gmail.com</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>0815-5963-2090</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:sanan@gmail.com">kripiksanan@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

@@ -50,34 +50,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_banner_nav_right">
 <!-- mail -->
 		<div class="mail">
-			<h3>Mail Us</h3>
+			<h3>Hubungi Kami</h3>
 			<div class="agileinfo_mail_grids">
 				<div class="col-md-4 agileinfo_mail_grid_left">
 					<ul>
 						<li><i class="fa fa-home" aria-hidden="true"></i></li>
-						<li>address<span>868 1st Avenue NYC.</span></li>
+						<li>Alamat<span> Jl. Sanan Gg. III No.168, Purwantoro, Blimbing, Kota Malang, Jawa Timur 65126</span></li>
 					</ul>
 					<ul>
 						<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-						<li>email<span><a href="mailto:info@example.com">info@example.com</a></span></li>
+						<li>Email<span><a href="mailto:kripiktempesanan@gmail.com">kripiksanan@gmail.com</a></span></li>
 					</ul>
 					<ul>
 						<li><i class="fa fa-phone" aria-hidden="true"></i></li>
-						<li>call to us<span>(+123) 233 2362 826</span></li>
+						<li>Nomor<span>0815-5963-2090</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8 agileinfo_mail_grid_right">
 					<form action="#" method="post">
 						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Name" value="Name*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name*';}" required="">
+							<input type="text" name="Name" value="Name*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama*';}" required="">
 							<input type="email" name="Email" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required="">
 						</div>
 						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Telephone" value="Telephone*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone*';}" required="">
-							<input type="text" name="Subject" value="Subject*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject*';}" required="">
+							<input type="text" name="Telephone" value="Telepon*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telepon*';}" required="">
+							<input type="text" name="Subject" value="Topik*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Topik*';}" required="">
 						</div>
 						<div class="clearfix"> </div>
-						<textarea  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<textarea  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Pesan...</textarea>
 						<input type="submit" value="Submit">
 						<input type="reset" value="Clear">
 					</form>

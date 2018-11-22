@@ -26,4 +26,19 @@ class Settings_model extends CI_Model
 		}
     }
 
+    public function updateAkun($id)
+    {
+        
+        $object = array(
+            'nama_pembeli' => $this->input->post('nama'),
+            'username_pembeli' => $this->input->post('username'),
+            'jenis_kelamin_pembeli' => $this->input->post('jenis_kelamin'),
+            'email_pembeli' => $this->input->post('email'),
+            'nomor_telepon_pembeli' => $this->input->post('nomor_telepon')
+        );
+
+        $this->db->where('id_pembeli', $id);
+        $this->db->update('sanan_pembeli', $object);
+    }
+
 }

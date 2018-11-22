@@ -28,12 +28,7 @@ body a:hover{
 }
 /*-- header --*/
 .fixed{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	margin: 0 auto;
-	left:0;
-	z-index:9999;
+
 }
 span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
 	position: relative !important;
@@ -80,6 +75,12 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 }
 .agileits_header{
 	background:#212121;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left:0;
+    z-index:9999;
 }
 .w3l_offers{
 	float:left;
@@ -154,11 +155,11 @@ ul.dropdown-menu.drp-mnu li a i {
     padding-left: 1em;
 }
 .logo_products{
-	padding:1.5em 0 1em;
+	padding:3.5em 0 1em;
 }
 .w3ls_logo_products_left{
 	float:left;
-	margin-right: 7em;
+	margin-right: 5em;
 }
 .w3ls_logo_products_left h1 a{
 	font-size: 1.5em;
@@ -259,7 +260,7 @@ ul.dropdown-menu.drp-mnu li a i {
     float: none;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #84C639;
+    background-color: #3f50b5;
     color: #fff;
 }
 .navbar-nav {
@@ -273,7 +274,7 @@ ul.dropdown-menu.drp-mnu li a i {
     border-bottom: 1px dotted #CDCDCD;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #84C639;
+    background-color: #3f50b5;
     border: none;
 }
 .w3ls_vegetables_menu {
@@ -303,7 +304,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	margin-bottom: 5em;
 }
 .w3l_banner_nav_right_banner{
-	background:url(../images/tempe1.jpg) no-repeat 0px 0px;
+	background:url(../images/back_sanan.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -838,12 +839,12 @@ a.btn.btn-primary {
 .form-control {
     border-radius: 0;
 }
-.btn-primary {
+/*.btn-primary {
     color: #fff;
     background-color: #84c639;
     border-color: #84c639;
     border-radius: 0;
-}
+}*/
 button.submit.check_out{
     display: block;
     position: relative;
@@ -1206,7 +1207,7 @@ button.submit.check_out{
 /*-- products-breadcrumb --*/
 .products-breadcrumb{
 	padding:1em 0;
-	background:#84C639;
+	background:#3f50b5;
 }
 .products-breadcrumb ul li{
 	display:inline-block;
@@ -1234,7 +1235,7 @@ button.submit.check_out{
 	padding-top: 7em;
 }
 .w3l_banner_nav_right_banner3{
-	background:url(../images/12.jpg) no-repeat 0px 0px;
+	background:url(../images/back_sanan3.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1274,7 +1275,7 @@ button.submit.check_out{
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner8{
-	background:url(../images/26.jpg) no-repeat 0px 0px;
+	background:url(../images/back_sanan3.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;

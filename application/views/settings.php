@@ -53,65 +53,188 @@
 			<h3>Detail Informasi</h3>
 			<br>
 			<h4 style="text-align:left;">Informasi Umum
-			<div style="text-align: right; margin: 0; padding: 0; position: relative;">
-			<a href="#" class="btn btn-primary">
-        <span class="glyphicon glyphicon-edit"></span>
-        <span><strong>Edit</strong></span>            
-    		</a>
-			</h4>
+				<div style="float: right; margin: 0; padding: 0; position: relative;">
+				<?php foreach($pembeli as $r ){ ?>
+				<a href="#pesan<?php echo $r->id_pembeli?>" class="btn btn-primary" data-toggle="modal" data-target="">
+			        <span class="glyphicon glyphicon-edit"></span>
+			        <span><strong>Edit</strong></span>            
+	    		</a>
+				<div id="pesan<?php echo $r->id_pembeli?>" class="modal fade" role="dialog">
+				    <div class="modal-dialog modal-dialog-centered">
+				      <div class="modal-content">
+				        <div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				          	<h4 class="modal-title">Edit Informasi Akun</h4>
+				        </div>
+				        <div class="modal-body">
+				        <?php echo form_open_multipart('Settings/update/'.$r->id_pembeli) ?> 
+				        
+				        <?php echo validation_errors(); ?>
+				          <div class="container-fluid"> 
+				            <h5>
+				              <table class="table table-hover" border="0">
+				                <tr>
+				                  <td width="1">Nama</td> 
+				                  <td width="200"><input type="text" class="form-control" name="nama" required="" value="<?php echo $pembeli[0]->nama_pembeli ?>"></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Username</td> 
+				                  <td width="200"><input type="text" class="form-control" name="username" required="" value="<?php echo $pembeli[0]->username_pembeli ?>"></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Email</td> 
+				                  <td width="200"><input type="text" class="form-control" name="email" required="" value="<?php echo $pembeli[0]->email_pembeli ?>"></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Jenis Kelamin</td> 
+				                  <td width="200">
+				                    <select class="form-control" name="jenis_kelamin" id="gender1">
+				                      <option value="L">Laki-Laki</option>
+				                      <option value="P">Perempuan</option>
+				                    </select
+				                  </td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Telepon</td> 
+				                  <td width="200"><input type="text" class="form-control" name="nomor_telepon" required="" value="<?php echo $pembeli[0]->nomor_telepon_pembeli ?>"></td>
+				                </tr>
+				              </table>
+				            </h5> 
+				          </div> 
+				        
+				        </div>
+				        <div class="modal-footer">
+				          <button type="submit" class="btn btn-primary">Pesan</button>
+				           <!-- <a class="btn btn-success" href="<?php echo base_url() ?>index.php/home/detail/<?php echo $data['id_pembeli']?>">Pesan</a> -->
+				          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				        </div>
+				        <?php echo form_close(); ?>
+				      </div>
+				    </div>
+				  </div> 
+				</h4>
 			<hr>
 			<div class="table-responsive">
   			<table class="table table-striped">
-			  <?php foreach($pembeli as $r ){ ?>
-			<tr>
-			<th scope="row">Nama </th>
-			<td><?php echo $r->nama_pembeli; ?></td>
-			<th>Jenis Kelamin </th>
-			<?php if($r->jenis_kelamin_pembeli=="L"){
-				$kelamin = "Laki-Laki";
-			}else{
-				$kelamin = "Perempuan";
-			} ?>
-			<td><?php echo $kelamin; ?></td>
-			</tr>
-			<tr>
-			<th>Username </th>
-			<td><?php echo $r->username_pembeli; ?></td>
-			<th>Email </th>
-			<td><?php echo $r->email_pembeli; ?></td>
-			</tr>
-			<tr>
-			<th>Telepon </th>
-			<td colspan="3"><?php echo $r->nomor_telepon_pembeli; ?></td>
-			</tr>
-			  <?php } ?>
-  			</table>
+			    <tr>
+			        <th scope="row">Nama </th>
+			        <td>
+			            <?php echo $r->nama_pembeli; ?>
+			        </td>
+			        <th>Jenis Kelamin </th>
+			        <?php if($r->jenis_kelamin_pembeli=="L"){
+							$kelamin = "Laki-Laki";
+						}else{
+							$kelamin = "Perempuan";
+						} ?>
+			            <td>
+			                <?php echo $kelamin; ?>
+			            </td>
+			    </tr>
+			    <tr>
+			        <th>Username </th>
+			        <td>
+			            <?php echo $r->username_pembeli; ?>
+			        </td>
+			        <th>Email </th>
+			        <td>
+			            <?php echo $r->email_pembeli; ?>
+			        </td>
+			    </tr>
+			    <tr>
+			        <th>Telepon </th>
+			        <td colspan="3">
+			            <?php echo $r->nomor_telepon_pembeli; ?>
+			        </td>
+			    </tr>
+			    <?php } ?>
+			</table>
 			</div> 
 			<br>
 			<h4 style="text-align:left;">Alamat Pengiriman
-			<div style="text-align: right; margin: 0; padding: 0; position: relative;">
-			<a href="#" class="btn btn-primary">
-        <span class="glyphicon glyphicon-plus"></span>
-        <span><strong>Tambah</strong></span>            
-    		</a>
-			</h4>
+				<div style="float: right; margin: 0; padding: 0; position: relative;">
+				<a href="#tambahalamat" class="btn btn-primary" data-toggle="modal" data-target="">  
+			        <span class="glyphicon glyphicon-plus"></span>
+			        <span><strong>Tambah</strong></span>            
+	    		</a>
+	    		<div id="tambahalamat" class="modal fade" role="dialog">
+				    <div class="modal-dialog modal-dialog-centered">
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">Tambah Alamat Pengiriman</h4>
+				        </div>
+				        <div class="modal-body">
+				        <?php echo form_open_multipart('Settings/tambahalamat/') ?> 
+				        
+				        <?php echo validation_errors(); ?>
+				          <div class="container-fluid"> 
+				            <h5>
+				              <table class="table table-hover" border="0">
+				                <tr>
+				                  <td width="1">Nama Alamat</td> 
+				                  <td width="200"><input type="text" class="form-control" name="nama_alamat" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Provinsi</td> 
+				                  <td width="200"><input type="text" class="form-control" name="provinsi" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Kota</td> 
+				                  <td width="200"><input type="text" class="form-control" name="kota" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Kecamatan</td> 
+				                  <td width="200"><input type="text" class="form-control" name="kecamatan" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Kode Pos</td> 
+				                  <td width="200"><input type="text" class="form-control" name="kode_pos" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Alamat Lengkap</td> 
+				                  <td width="200">
+				                  	<textarea type="text" class="form-control" name="alamat_lengkap" required=""></textarea>
+				                  </td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Nama Penerima</td> 
+				                  <td width="200"><input type="text" class="form-control" name="nama_penerima" required=""></td>
+				                </tr>
+				                <tr>
+				                  <td width="1">Nomor Telepon Penerima</td> 
+				                  <td width="200"><input type="text" class="form-control" name="nomor_telepon_penerima" required=""></td>
+				                </tr>
+				              </table>
+				            </h5> 
+				          </div> 
+				        
+				        </div>
+				        <div class="modal-footer">
+				          <button type="submit" class="btn btn-primary">Pesan</button>
+				          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				        </div>
+				        <?php echo form_close(); ?>
+				      </div>
+				    </div>
+				  </div> 
+				</h4>
 			<hr>
-			<?php foreach($alamat as $r ){ ?>
+			<?php foreach($alamat as $r ) { ?>
 			<div class="col-md-3 col-sm-3 col-xs-12 card-main-section">
-			<div class="row card-part">
-				<div class="col-md-12 col-sm-12 col-xs-12 card-title">
-					<h4><?= $r->nama_alamat; ?></h4>
+				<div class="row card-part">
+					<div class="col-md-12 col-sm-12 col-xs-12 card-title">
+						<h4><?= $r->nama_alamat; ?></h4>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 card-description">
+						<p><?= $r->alamat_lengkap; ?> - <?= $r->kecamatan.",". $r->kota.".<br>". $r->provinsi; ?> 
+						</p>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 card-cart">
+						<a href="#detail" class="btn btn-info">DETAIL</a>
+						<a href="settings/hapus/<?= $r->id_alamat; ?>" class="btn btn-danger">HAPUS</a>
+					</div>
 				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12 card-description">
-					<p><?= $r->alamat_lengkap; ?> - <?= $r->kecamatan.",". $r->kota.".<br>". $r->provinsi; ?> 
-					</p>
-				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12 card-cart">
-					<a href="#detail" class="btn btn-info">DETAIL</a>
-					<a href="settings/hapus/<?= $r->id_alamat; ?>" class="btn btn-danger">HAPUS</a>
-				</div>
-				
-			</div>
 			</div>
 			<?php } ?>
 			<div class="clearfix"> </div>

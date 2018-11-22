@@ -5,7 +5,9 @@ class Faqs extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('faqs');
+		$this->load->model('Kategori_model');
+		$data['kategori'] = $this->Kategori_model->menu();
+		$this->load->view('faqs',$data);
 	}
 
 }

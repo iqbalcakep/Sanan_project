@@ -5,7 +5,9 @@ class Privacy extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('privacy');
+		$this->load->model('Kategori_model');
+		$data['kategori'] = $this->Kategori_model->menu();
+		$this->load->view('privacy',$data);
 	}
 
 }

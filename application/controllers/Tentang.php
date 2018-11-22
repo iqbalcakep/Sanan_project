@@ -5,7 +5,9 @@ class Tentang extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('tentang');
+		$this->load->model('Kategori_model');
+		$data['kategori'] = $this->Kategori_model->menu();		
+		$this->load->view('tentang',$data);
 	}
 
 }

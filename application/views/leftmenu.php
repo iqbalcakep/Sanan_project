@@ -12,17 +12,10 @@
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="<?php echo base_url() ?>index.php/home">Kripik Tempe</a></li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produk<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="<?php echo base_url() ?>index.php/produk">Contoh Produk</a></li>
-										<li><a href="<?php echo base_url() ?>index.php/produk">Contoh Produk 2</a></li>
-									</ul>
-								</div>                  
-							</div>				
+						<li>
+							<?php foreach ($kategori as $data) { ?>
+							<li><a href="<?php echo base_url() ?>index.php/produk"><?php echo $data['nama_kategori'] ?></a></li>
+							<?php } ?>			
 						</li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->

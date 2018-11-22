@@ -48,25 +48,21 @@
 					<ul class="slides">
 						<li>
 							<div class="w3l_banner_nav_right_banner">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="<?php echo base_url() ?><index.php/produk" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
 							</div>
 						</li>
 						<li>
 							<div class="w3l_banner_nav_right_banner1">
-								<h3>Make your <span>food</span> with Spicy.</h3>
+								<h3>Kripik Tempe<span>Renyah, Gurih & Asli</span> Malang</h3>
 								<div class="more">
-									<a href="<?php echo base_url() ?><index.php/produk" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="<?php echo base_url() ?>index.php/produk" class="button--saqui button--round-l button--text-thick">Beli Sekarang</a>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="w3l_banner_nav_right_banner2">
-								<h3>upto <i>50%</i> off.</h3>
+								<h3>Kripik Tempe<span>Renyah, Gurih & Asli</span> Malang</h3>
 								<div class="more">
-									<a href="<?php echo base_url() ?><index.php/produk" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="<?php echo base_url() ?>index.php/produk" class="button--saqui button--round-l button--text-thick">Beli Sekarang</a>
 								</div>
 							</div>
 						</li>
@@ -97,25 +93,25 @@
 			<div class="wthree_banner_bottom_left_grid_sub1">
 				<div class="col-md-4 wthree_banner_bottom_left">
 					<div class="wthree_banner_bottom_left_grid">
-						<img src="<?php echo base_url() ?>assets/images/4.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url() ?>assets/images/tempe5.png" alt=" " class="img-responsive" style="height: 290px"/>
 						<div class="wthree_banner_bottom_left_grid_pos">
-							<h4>Discount Offer <span>25%</span></h4>
+							<h4>Diskon <span>25%</span></h4>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 wthree_banner_bottom_left">
 					<div class="wthree_banner_bottom_left_grid">
-						<img src="<?php echo base_url() ?>assets/images/5.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url() ?>assets/images/tempe3.jpg" alt=" " class="img-responsive" />
 						<div class="wthree_banner_btm_pos">
-							<h3>introducing <span>best store</span> for <i>groceries</i></h3>
+							<h3>Mengenalkan <span>Kripik Tempe</span> untuk <i>Anda</i></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 wthree_banner_bottom_left">
 					<div class="wthree_banner_bottom_left_grid">
-						<img src="<?php echo base_url() ?>assets/images/6.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url() ?>assets/images/tempe8.jpg" alt=" " class="img-responsive" width="400" height="400"/>
 						<div class="wthree_banner_btm_pos1">
-							<h3>Save <span>Upto</span> $10</h3>
+							<h3>Menyimpan <span>sampai dengan</span> Rp. 10.000</h3>
 						</div>
 					</div>
 				</div>
@@ -126,20 +122,23 @@
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3>Penawaran Kami</h3>
+			<h3>Produk Kami</h3>
 			<div class="agile_top_brands_grids">
+				<?php foreach ($produk as $data){ ?>
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">
-							<div class="tag"><img src="<?php echo base_url() ?>assets/images/tag.png" alt=" " class="img-responsive" /></div>
 							<div class="agile_top_brand_left_grid1">
 								<figure>
-									<div class="snipcart-item block" >
+									<div class="snipcart-item block">
+
 										<div class="snipcart-thumb">
-											<a href="<?php echo base_url() ?>index.php/detail"><img title=" " alt=" " src="<?php echo base_url() ?>assets/images/1.png" /></a>		
-											<p>fortune sunflower oil</p>
-											<h4>$7.99 <span>$10.00</span></h4>
+											<a href="<?php echo base_url('index.php/detail/id/'.$data['id_produk']) ?>"><img title=" " alt=" " src="<?php echo base_url('assets/images/produk/'.$data['foto1']) ?>"  /></a>		
+											<p><?php echo $data['nama_produk'] ?></p>
+											<h4>Rp. <?php echo $data['harga_produk'] ?>,00</span></h4>
 										</div>
+
+										
 										<div class="snipcart-details top_brand_home_details">
 											<form action="<?php echo base_url() ?>index.php/pembayaran" method="post">
 												<fieldset>
@@ -152,11 +151,10 @@
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Tambah Keranjang" class="button" />
+													<input type="submit" name="submit" value="Ke Halaman Detail" class="button" />
 												</fieldset>
 													
 											</form>
-									
 										</div>
 									</div>
 								</figure>
@@ -164,111 +162,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="<?php echo base_url() ?>index.php/detail"><img title=" " alt=" " src="<?php echo base_url() ?>assets/images/3.png" /></a>		
-											<p>basmati rise (5 Kg)</p>
-											<h4>$11.99 <span>$15.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="basmati rise" />
-													<input type="hidden" name="amount" value="11.99" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Tambah Keranjang" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="<?php echo base_url() ?>assets/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="<?php echo base_url() ?>index.php/detail"><img src="<?php echo base_url() ?>assets/images/2.png" alt=" " class="img-responsive" /></a>
-											<p>Pepsi soft drink (2 Ltr)</p>
-											<h4>$8.00 <span>$10.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Pepsi soft drink" />
-													<input type="hidden" name="amount" value="8.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Tambah Keranjang" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="<?php echo base_url() ?>assets/images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="<?php echo base_url() ?>index.php/detail"><img src="<?php echo base_url() ?>assets/images/4.png" alt=" " class="img-responsive" /></a>
-											<p>dogs food (4 Kg)</p>
-											<h4>$9.00 <span>$11.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="dogs food" />
-													<input type="hidden" name="amount" value="9.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Tambah Keranjang" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php } ?>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -277,7 +171,7 @@
 <!-- fresh-vegetables -->
 	<div class="fresh-vegetables">
 		<div class="container">
-			<h3>Produk Best Seller</h3>
+			<h3>Produk Terlaris</h3>
 			<div class="w3l_fresh_vegetables_grids">
 				<div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
 					<div class="w3l_fresh_vegetables_grid2">
@@ -300,7 +194,7 @@
 								<img src="<?php echo base_url() ?>assets/images/7.jpg" alt=" " class="img-responsive" />
 								<div class="w3l_fresh_vegetables_grid1_rel_pos">
 									<div class="more m1">
-										<a href="<?php echo base_url() ?><index.php/produk" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+										<a href="<?php echo base_url() ?><index.php/produk" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Belanja</a>
 									</div>
 								</div>
 							</div>
@@ -308,7 +202,7 @@
 						<div class="w3l_fresh_vegetables_grid1_bottom">
 							<img src="<?php echo base_url() ?>assets/images/10.jpg" alt=" " class="img-responsive" />
 							<div class="w3l_fresh_vegetables_grid1_bottom_pos">
-								<h5>Special Offers</h5>
+								<h5>Penawaran Spesial</h5>
 							</div>
 						</div>
 					</div>
@@ -390,7 +284,6 @@ $(document).ready(function(){
 				evt.preventDefault();
 			}
 		});
-
 	</script>
 </body>
 </html>

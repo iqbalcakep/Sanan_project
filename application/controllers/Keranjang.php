@@ -5,7 +5,9 @@ class Keranjang extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('keranjang');
+		$this->load->model('Kategori_model');
+		$data['kategori'] = $this->Kategori_model->menu();
+		$this->load->view('keranjang',$data);
 	}
 
 }

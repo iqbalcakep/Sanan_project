@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Privacy Policy | Kripik Tempe Sanan</title>
+<title>Kebijakan Privasi | Kripik Tempe Sanan</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,7 +50,7 @@
 <!-- privacy -->
 		<div class="privacy">
 			<div class="privacy1">
-				<h3>Privacy Policy</h3>
+				<h3>Kebijakan & Privasi</h3>
 				<div class="banner-bottom-grid1 privacy1-grid">
 					<ul>
 						<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
