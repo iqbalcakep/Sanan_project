@@ -1,0 +1,193 @@
+/* 
+AlPhaD UI - Header Advance 
+
+* Version: 1.0
+* Build Date    :  27-2-2018 
+* Last Update   :  - []
+* Author: ALPhA D
+* Website: www.alphadsy.com
+* Github: www.github.com/alphadsy/
+* Lic : MIT 
+
+[Layout]
+
+[Color codes]
+
+[Typography]
+
+[content table]
+
+- header main css 
+  - header main css (lg)
+- #header1 css
+  - #header1 css (lg)
+.
+.
+.    
+- demo css (for demo purpose only)
+
+*/
+
+/* =======================================
+ header
+========================================*/
+.header {
+    position: relative;
+    width: 100vw;	
+    height: 600px;	
+}
+.header .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform:translate(-50%,-50%);
+    z-index: 15; 
+    padding: 1rem;
+}
+.header .left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  z-index: 5; 
+}
+.header .right {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  z-index: 5; 
+}
+.header .scroll {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  color: #fff;
+  font-size: 1.5rem;
+}
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+.header .center {
+  width: 50%;
+}
+.header .left {
+}
+.header .right {
+}
+}
+ 
+
+/* =======================================
+ header#2
+========================================*/
+#header2 {
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff 55%,
+    #F4F4F4 55%,
+    #F4F4F4 100%
+  );
+}
+#header2 img {
+  position: absolute;
+  left: 15%;
+}
+#header2 .caption {
+  color: #000;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  z-index: 5;
+  text-align: center;
+}
+#header2 .caption .title {
+  opacity: .9;
+  font-size: 5rem;
+  font-weight: 600;
+}
+#header2 .caption p {
+  color: #aaa;
+  margin-top: 2rem;
+}
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#header2 {
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff 20%,
+    #F4F4F4 20%,
+    #F4F4F4 55%,
+    #DAE6E6 55%,
+    #DAE6E6 80%,
+    #F4F4F4 80%,
+    #F4F4F4 100%
+  );
+}
+#header2 img {
+  left: 50%;
+  opacity: 1;
+}
+#header2 .caption {
+  top: 15%;
+  left: 10%;
+  width: 40%;
+  padding-right: 3rem;
+  z-index: 5;
+  text-align: left;
+}
+#header2 .caption p {
+  margin-top: 2rem;
+}  
+}
+
+
+/* =======================================
+demo css
+========================================*/
+
+/*=== for demo only ===*/
+.demo-title {
+  text-align: center;
+  color: #808080;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.demo-more {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.demo-more i {
+  color: #ffffff;
+}
+.update-note {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 15px;  
+}
+a {
+  text-decoration: underline;
+  color: #696969;
+  font-weight: 600;
+}
+a:hover {
+  color: #696969;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+ 

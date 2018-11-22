@@ -6,7 +6,13 @@ class Settings extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('settings_model');
+<<<<<<< HEAD
         $this->load->model('Kategori_model');
+=======
+       if(!$this->session->userdata('login')){
+           redirect('login');
+       }
+>>>>>>> Admin
 		
 	}
 
